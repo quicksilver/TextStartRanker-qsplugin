@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>TextMate Ranker</string>
+	<string>TextStart Ranker</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.macromates.quicksilver.duff_string_ranker</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>TextMate Ranker</string>
+	<string>TextStart Ranker</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
