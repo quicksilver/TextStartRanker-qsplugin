@@ -189,7 +189,7 @@ double substring_score (UniChar* first1, UniChar* last1, UniChar* first2, UniCha
 	return res;
 }
 
-@implementation DuffStringRanker
+@implementation TextStartRanker
 - (id)initWithString:(NSString *)aString
 {
 	if(!(self = [super init]))
