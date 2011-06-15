@@ -1,7 +1,7 @@
 #import <algorithm>
 #import <vector>
 #import <cctype>
-#import "DuffStringRanker.h"
+#import "TextStartRanker.h"
 
 #define IGNORED_SCORE 0.9
 
