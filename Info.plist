@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>TextMate Ranker</string>
+	<string>TextStart Ranker</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.macromates.quicksilver.duff_string_ranker</string>
+	<string>com.qsapp.Quicksilver.TextStartRanker</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>TextMate Ranker</string>
+	<string>TextStart Ranker</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleVersion</key>
@@ -19,18 +19,18 @@
 	<key>QSPlugIn</key>
 	<dict>
 		<key>author</key>
-		<string>Allan Odgaard</string>
+		<string>Allan Odgaard, Florian Heckl</string>
 		<key>description</key>
-		<string>Ranking which prefers word boundaries. Change the default ranker in the Handlers preferences.</string>
+		<string>Ranking which prefers word boundaries.&lt;br&gt;&lt;br&gt;So when you enter &quot;ab&quot; as a search string then &quot;Address Book.app&quot; gets a higher score then &quot;Abrasive.jpg&quot;.&lt;br&gt;&lt;br&gt;You can change the default ranker in the Handlers preferences.</string>
 		<key>icon</key>
-		<string>com.macromates.textmate</string>
+		<string>defaultIcon</string>
 	</dict>
 	<key>QSRegistration</key>
 	<dict>
 		<key>QSStringRankers</key>
 		<dict>
-			<key>DuffStringRanker</key>
-			<string>DuffStringRanker</string>
+			<key>TextStartRanker</key>
+			<string>TextStartRanker</string>
 		</dict>
 	</dict>
 	<key>QSRequirements</key>
