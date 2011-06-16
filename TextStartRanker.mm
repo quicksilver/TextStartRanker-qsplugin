@@ -195,7 +195,7 @@ double substring_score (UniChar* first1, UniChar* last1, UniChar* first2, UniCha
 	if(!(self = [super init]))
 		return nil;
 
-//	NSLog(@"%s %@", _cmd, aString);
+//	NSLog(@"%s %@", (char*)_cmd, aString);
 
 	CFMutableStringRef tmpStr = CFStringCreateMutableCopy(kCFAllocatorDefault, 0, (CFStringRef)aString);
 	if(!tmpStr)
@@ -295,7 +295,7 @@ double substring_score (UniChar* first1, UniChar* last1, UniChar* first2, UniCha
  */
 NSMutableString* adaptedString(NSString* input)
 {
-	NSMutableString *tmp = [[input mutableCopy] autorelease];
+	NSMutableString *tmp = [[[input lowercaseString] mutableCopy] autorelease];
 	if (!CFStringTransform((CFMutableStringRef)tmp, NULL, kCFStringTransformStripDiacritics, false))
 		NSLog(@"Tranform not successful");
 	return tmp;
@@ -303,7 +303,7 @@ NSMutableString* adaptedString(NSString* input)
 
 - (double)scoreForAbbreviation:(NSString*)anAbbreviation
 {
-	//	NSLog(@"%s %@", _cmd, anAbbreviation);
+//	NSLog(@"%s %@", (char*)_cmd, anAbbreviation);
 	
 	if ([anAbbreviation length] == 0)
 		return IGNORED_SCORE;
@@ -318,7 +318,7 @@ NSMutableString* adaptedString(NSString* input)
 	double score = calculate_score(string, string + length, str.begin(), str.end(), unit, 0.5 * unit);
 	double s_score = substring_score(string, string + length, str.begin(), str.end(), unit);
 
-//	printf("%s: max(%.3f, %.3f) %s\n", [anAbbreviation UTF8String], score, s_score, [originalString UTF8String]);
+//	NSLog(@"%s: max(%.3f, %.3f) %s\n", [anAbbreviation UTF8String], score, s_score, [originalString UTF8String]);
 
 	score = std::max(score, s_score);
 	if(std::search(string, string + length, str.begin(), str.end()) != string + length)
