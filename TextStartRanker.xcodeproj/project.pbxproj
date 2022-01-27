@@ -20,21 +20,18 @@
 		14A6EEB710D02952000B05B4 /* Common.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
 		14A6EEB810D02952000B05B4 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		14A6EEB910D02952000B05B4 /* Developer.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Developer.xcconfig; sourceTree = "<group>"; };
-		14A6EEBA10D02952000B05B4 /* QSPlugIn_Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Debug.xcconfig; sourceTree = "<group>"; };
-		14A6EEBB10D02952000B05B4 /* QSPlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSPlugIn_Prefix.pch; sourceTree = "<group>"; };
-		14A6EEBC10D02952000B05B4 /* QSPlugIn_Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn_Release.xcconfig; sourceTree = "<group>"; };
 		14A6EEBD10D02952000B05B4 /* QSPlugIn.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = QSPlugIn.xcconfig; sourceTree = "<group>"; };
 		14A6EEBE10D02952000B05B4 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		175C2D2B082687EC0030B33B /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSFoundation.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSFoundation.framework; sourceTree = "<absolute>"; };
-		175C2D2C082687EC0030B33B /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSEffects.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSEffects.framework; sourceTree = "<absolute>"; };
+		175C2D2B082687EC0030B33B /* QSFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		175C2D2C082687EC0030B33B /* QSEffects.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSEffects.framework; path = /private/tmp/QS/build/Release/QSEffects.framework; sourceTree = "<absolute>"; };
 		4211FD4113A969010012CC49 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42B6819613A88A4800820FF9 /* TextStartRanker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStartRanker.h; sourceTree = "<group>"; };
 		42B6819713A88A4800820FF9 /* TextStartRanker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextStartRanker.mm; sourceTree = "<group>"; };
 		42B6819913A88A5D00820FF9 /* TextStartRanker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStartRanker_Prefix.pch; sourceTree = "<group>"; };
-		8D1AC9740486D14A00FE50C9 /* TextStart Ranker.qsplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TextStart Ranker.qsplugin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1AC9740486D14A00FE50C9 /* TextStart Ranker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TextStart Ranker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD92D38A0106425D02CA0E72 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		E1022AE706B3469300299BEC /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSCore.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSCore.framework; sourceTree = "<absolute>"; };
-		E1022AE806B3469300299BEC /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QSInterface.framework; path = /Applications/Quicksilver.app/Contents/Frameworks/QSInterface.framework; sourceTree = "<absolute>"; };
+		E1022AE706B3469300299BEC /* QSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1022AE806B3469300299BEC /* QSInterface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QSInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +74,7 @@
 		1ED78706FE9D4A0611CA0C5A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D1AC9740486D14A00FE50C9 /* TextStart Ranker.qsplugin */,
+				8D1AC9740486D14A00FE50C9 /* TextStart Ranker.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,14 +114,12 @@
 				14A6EEB710D02952000B05B4 /* Common.xcconfig */,
 				14A6EEB810D02952000B05B4 /* Debug.xcconfig */,
 				14A6EEB910D02952000B05B4 /* Developer.xcconfig */,
-				14A6EEBA10D02952000B05B4 /* QSPlugIn_Debug.xcconfig */,
-				14A6EEBB10D02952000B05B4 /* QSPlugIn_Prefix.pch */,
-				14A6EEBC10D02952000B05B4 /* QSPlugIn_Release.xcconfig */,
 				14A6EEBD10D02952000B05B4 /* QSPlugIn.xcconfig */,
 				14A6EEBE10D02952000B05B4 /* Release.xcconfig */,
 			);
-			path = Configuration;
-			sourceTree = QS_SOURCE_ROOT;
+			name = Configuration;
+			path = /private/tmp/QS/Configuration;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -136,7 +131,6 @@
 				8D1AC9660486D14A00FE50C9 /* Resources */,
 				8D1AC96A0486D14A00FE50C9 /* Sources */,
 				8D1AC96E0486D14A00FE50C9 /* Frameworks */,
-				E1022B2806B3475D00299BEC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,7 +139,7 @@
 			name = "TextStart Ranker";
 			productInstallPath = "$(HOME)/Developer/Palettes";
 			productName = QSDuffStringRanker;
-			productReference = 8D1AC9740486D14A00FE50C9 /* TextStart Ranker.qsplugin */;
+			productReference = 8D1AC9740486D14A00FE50C9 /* TextStart Ranker.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -155,6 +149,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0410;
+				TargetAttributes = {
+					8D1AC9600486D14A00FE50C9 = {
+						ProvisioningStyle = Manual;
+					};
+				};
 			};
 			buildConfigurationList = 7F4ADED40A4F7170002A2A1B /* Build configuration list for PBXProject "TextStartRanker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -187,22 +186,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		E1022B2806B3475D00299BEC /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/bltrversion $INFOPLIST_FILE";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		8D1AC96A0486D14A00FE50C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -217,27 +200,17 @@
 /* Begin XCBuildConfiguration section */
 		7F4ADED10A4F7170002A2A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A6EEBA10D02952000B05B4 /* QSPlugIn_Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "TextStart Ranker";
-				SDKROOT = "";
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
 		7F4ADED20A4F7170002A2A1B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14A6EEBC10D02952000B05B4 /* QSPlugIn_Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "TextStart Ranker";
-				SDKROOT = "";
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
@@ -245,10 +218,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A6EEB810D02952000B05B4 /* Debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = "";
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Debug;
 		};
@@ -256,10 +225,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 14A6EEBE10D02952000B05B4 /* Release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				SDKROOT = "";
-				VALID_ARCHS = "i386 x86_64";
 			};
 			name = Release;
 		};
