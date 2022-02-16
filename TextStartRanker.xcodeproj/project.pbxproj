@@ -192,7 +192,9 @@
 /* Begin XCBuildConfiguration section */
 		7F4ADED10A4F7170002A2A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A6EEBD10D02952000B05B4 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "TextStart Ranker";
 				WRAPPER_EXTENSION = qsplugin;
@@ -201,7 +203,9 @@
 		};
 		7F4ADED20A4F7170002A2A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14A6EEBD10D02952000B05B4 /* QSPlugIn.xcconfig */;
 			buildSettings = {
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				OTHER_LDFLAGS = "-bundle";
 				PRODUCT_NAME = "TextStart Ranker";
 				WRAPPER_EXTENSION = qsplugin;
